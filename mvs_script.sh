@@ -1,4 +1,3 @@
-
 #! /bin/bash
 # ===== PBS OPTIONS =====
 ### Set the job name
@@ -14,8 +13,8 @@ module load intel openmpi
 module load cuda
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/users/sagarw10/opt/CGAL-4.9/lib
 
-export MVS_DIR="/users/sagarw10/opt/openMVS_updated/openmvs_build/bin"
-export DATA_DIR="/users/sagarw10/opt/openSFM/OpenSfM/data/dataset1_gdrive/openmvs"
+export MVS_DIR="/users/sshriva3/opt/openMVS_updated/openmvs_build/bin"
+export DATA_DIR="/users/sshriva3/opt/openSFM/OpenSfM/data/dataset1_gdrive/openmvs"
 
 $MVS_DIR/DensifyPointCloud $DATA_DIR/scene.mvs
 
